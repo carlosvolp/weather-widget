@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title> Weather App </title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="weather-side">
+    <div class="weather-gradient">
+      <div class="date-container">
+        <h2 class="date-dayname"><span class="location weather__city">Limeira, SP</span></h2>
+        <span class="weather__weekday"></span>
+        <span class="date-day weather__datetime">21 Nov 2023</span>
+      </div>
+      <div class="weather-container">
+        <div class="min-max weather__minmax">
+          <p>Min: 12&#176</p>
+          <p>Max: 16&#176</p>
+        </div>
+        <div class="weather-temp-box">
+        <h1 class="weather-temp weather__temperature">30°C</h1>
+          <div class="weather-desc"> 
+            <picture class="weather__icon"></picture>
+            <span class="weather__forecast">Nuvens</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info-side">
+    <div class="today-info-container">
+      <div class="today-info">
+        <div class="weather__units">
+          <span class="weather_unit_celsius">&#176C</span>
+          <span class="weather_unit_farenheit">&#176F</span>
+      </div>
+        <div class="precipitation"><span class="title">Sensação térmica</span><span class="value weather__realfeel">18&#176</span>
+          <div class="clear"></div>
+        </div>
+        <div class="humidity"> <span class="title">Umidade</span><span class="value weather__humidity">34%</span>
+          <div class="clear"></div>
+        </div>
+        <div class="wind"> <span class="title">Vento</span><span class="value weather__wind">18&#176</span>
+          <div class="clear"></div>
+        </div>
+        <div class="wind"> <span class="title">Pressão</span><span class="value weather__pressure">18&#176</span>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="week-container">
+      <ul class="week-list">
+        <li class="active"><i class="day-icon" data-feather="sun"></i><span class="day-name">Terça</span><span class="day-temp">29°C</span></li>
+        <li><i class="day-icon" data-feather="cloud"></i><span class="day-name">Quarta</span><span class="day-temp">21°C</span></li>
+        <li><i class="day-icon" data-feather="cloud-snow"></i><span class="day-name">Quinta</span><span class="day-temp">08°C</span></li>
+        <li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Sexta</span><span class="day-temp">19°C</span></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="location-container">
+      <form class="weather__search">
+        <input type="text" placeholder="Digite o nome da cidade" class="weather__searchform">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </form> 
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src="../assets/js/script.min.js"></script>
+  <img src="assets/uh.jpg" alt="">
+</body>
+</html>
